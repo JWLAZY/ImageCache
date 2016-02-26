@@ -16,6 +16,6 @@
 
 @end
 
-typedef void(^JWImageDownloaderProgressBlock)(NSInteger receivedSize,NSInteger expectedSize);
+typedef void (^JWImageDownloaderProgressBlock)(NSInteger receivedSize, NSInteger expectedSize);
 
-typedef void(^JWImageDownloaderCompletedBlock)(UIImage *image,JWImageCacheType cacheType,NSError *error,BOOL finished);
+typedef void (^JWImageDownloaderCompletedBlock)(UIImage *image, JWImageCacheType cacheType, NSError *error, BOOL finished);

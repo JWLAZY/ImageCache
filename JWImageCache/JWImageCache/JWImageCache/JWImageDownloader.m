@@ -8,6 +8,7 @@
 
 #import "JWImageDownloader.h"
 
+
 @implementation JWImageDownloader
 
 /**
@@ -20,7 +21,8 @@
  *
  *  @return 下载的操作
  */
-- (id<JWImageOperation>)downloadImageWithURL:(NSURL *)url options:(JWImageDownloaderOptions)option progressBlock:(JWImageDownloaderProgressBlock)progressBlock completedBlock:(JWImageDownloaderCompletedBlock)completedBlock{
+- (id<JWImageOperation>)downloadImageWithURL:(NSURL *)url options:(JWImageDownloaderOptions)option progressBlock:(JWImageDownloaderProgressBlock)progressBlock completedBlock:(JWImageDownloaderCompletedBlock)completedBlock
+{
     return nil;
 }
 

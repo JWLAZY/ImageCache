@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "JWImageOperation.h"
 
+
 @interface JWImageDownloaderOperation : NSObject
 
 @end

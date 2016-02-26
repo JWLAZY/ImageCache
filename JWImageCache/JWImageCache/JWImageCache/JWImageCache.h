@@ -15,8 +15,9 @@ typedef NS_ENUM(NSUInteger, JWImageCacheType) {
     JWImageCacheTypeMemory,
 };
 
-typedef void(^JWImageQueryCompletedBlock)(UIImage *image,JWImageCacheType cacheType);
-typedef void(^JWImageCheckCacheCompletionBlock)(BOOL isInCache);
+typedef void (^JWImageQueryCompletedBlock)(UIImage *image, JWImageCacheType cacheType);
+typedef void (^JWImageCheckCacheCompletionBlock)(BOOL isInCache);
+
 
 @interface JWImageCache : NSObject
 

@@ -8,13 +8,13 @@
 
 #import "UIImageView+JWCache.h"
 
+
 @implementation UIImageView (JWCache)
 
 
-- (void)jw_setImageWithURL:(NSURL *)imageUrl{
-
+- (void)jw_setImageWithURL:(NSURL *)imageUrl
+{
     //通过manager去查找
-    
 }
 
 @end

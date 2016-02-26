@@ -19,12 +19,13 @@
 
 @end
 
+
 @interface JWImageManager : NSObject
 
 //用来缓存相关操作
-@property (nonatomic,strong) JWImageCache * imageCache;
+@property (nonatomic, strong) JWImageCache *imageCache;
 //用来下载图片相关操作
-@property (nonatomic,strong) JWImageDownloader * imageDownloader;
+@property (nonatomic, strong) JWImageDownloader *imageDownloader;
 
 + (instancetype)sharedManager;
 

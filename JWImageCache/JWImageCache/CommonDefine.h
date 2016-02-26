@@ -11,7 +11,7 @@
 
 
 #ifdef DEBUG
-#define DLOG(fmt,...) NSLog((@"%s [line %d] " fmt),__FUNCTION__,__LINE__,##__VA_ARGS__);
+#define DLOG(fmt, ...) NSLog((@"%s [line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
 #define DLOG(...)
 #endif
