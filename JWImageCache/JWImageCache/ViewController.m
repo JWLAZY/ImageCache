@@ -22,6 +22,14 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)test
+{
+    NSLog(@"%@", @"你好啊");
+    if (true) {
+        NSLog(@"true");
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
