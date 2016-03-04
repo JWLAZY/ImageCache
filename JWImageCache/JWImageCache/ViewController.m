@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIImageView+JWCache.h"
 
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @end
 
@@ -19,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self test];
+    //    [self test];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -29,6 +31,10 @@
     NSLog(NSLocalizedStringFromTable(@"你好", @"JW Localizabled", nil));
     NSString *test = [[NSBundle bundleWithPath:path] localizedStringForKey:@"你好" value:nil table:@"JW Localizabled"];
     NSLog(@"%@", test);
+}
+- (IBAction)loadImage:(id)sender
+{
+    [self.image jw_setImageWithURL:[NSURL URLWithString:@""]];
 }
 
 - (void)didReceiveMemoryWarning
