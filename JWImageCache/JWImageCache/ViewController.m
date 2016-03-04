@@ -19,15 +19,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self test];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)test
 {
-    NSLog(@"%@", @"你好啊");
-    if (true) {
-        NSLog(@"true");
-    }
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"en" ofType:@"lproj"];
+    NSLog(NSLocalizedStringFromTable(@"你好", @"JW Localizabled", nil));
+    NSString *test = [[NSBundle bundleWithPath:path] localizedStringForKey:@"你好" value:nil table:@"JW Localizabled"];
+    NSLog(@"%@", test);
 }
 
 - (void)didReceiveMemoryWarning
