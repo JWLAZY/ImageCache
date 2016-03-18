@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtD-fG-bTt">
-                                <rect key="frame" x="108" y="223" width="60" height="30"/>
-                                <state key="normal" title="加载图片"/>
+                                <rect key="frame" x="104" y="223" width="69" height="30"/>
+                                <state key="normal" title="加载图片2"/>
                                 <connections>
                                     <action selector="loadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7b-7h-UAY"/>
                                 </connections>
