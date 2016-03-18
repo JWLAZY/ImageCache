@@ -344,7 +344,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwdev.chater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fb89a3dd-6a78-4985-b62f-60b1d360a0c4";
+				PROVISIONING_PROFILE = "f2fa86df-ce90-4cd6-b0d6-bd32cbe151a2";
 			};
 			name = Debug;
 		};
@@ -360,7 +360,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwdev.chater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fb89a3dd-6a78-4985-b62f-60b1d360a0c4";
+				PROVISIONING_PROFILE = "f2fa86df-ce90-4cd6-b0d6-bd32cbe151a2";
 			};
 			name = Release;
 		};

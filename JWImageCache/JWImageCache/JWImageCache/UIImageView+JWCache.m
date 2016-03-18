@@ -17,4 +17,9 @@
     //通过manager去查找
 }
 
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *, id> *)change context:(void *)context
+{
+}
+
 @end
