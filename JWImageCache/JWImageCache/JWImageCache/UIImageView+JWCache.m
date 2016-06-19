@@ -7,6 +7,9 @@
 //
 
 #import "UIImageView+JWCache.h"
+#import "JWImageDownloader.h"
+#import "JWImageOperation.h"
+#import "JWImageManager.h"
 
 
 @implementation UIImageView (JWCache)
@@ -15,11 +18,14 @@
 - (void)jw_setImageWithURL:(NSURL *)imageUrl
 {
     //通过manager去查找
-}
+    __weak __typeof(self) wself = self;
+    //获取到一个操作,同时进行下载
+    id<JWImageOperation> operation = [[JWImageManager sharedManager] downloadImageWithURL:imageUrl progress:^(NSInteger receivedSize, NSInteger expectedSize) {
 
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *, id> *)change context:(void *)context
-{
+    } completed:^(UIImage *image, JWImageCacheType cacheType, NSError *error, BOOL finished) {
+        wself.image = image;
+        [wself setNeedsLayout];
+    }];
 }
 
 @end

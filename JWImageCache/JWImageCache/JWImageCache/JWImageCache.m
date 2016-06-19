@@ -9,6 +9,13 @@
 #import "JWImageCache.h"
 #import <CommonCrypto/CommonDigest.h>
 
+/**
+ *  计算消耗的资源
+ *
+ *  @param image 图片
+ *
+ *  @return 消耗内存大小
+ */
 static __inline__ NSUInteger JWCacheCostForImage(UIImage *image)
 {
     return image.size.height * image.size.width * image.scale * image.scale;
@@ -27,6 +34,15 @@ static __inline__ NSUInteger JWCacheCostForImage(UIImage *image)
 
 @implementation JWImageCache
 
++ (instancetype)sharedCache
+{
+    static JWImageCache *cache = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        cache = [[JWImageCache alloc] init];
+    });
+    return cache;
+}
 
 #pragma mark - 路径问题
 

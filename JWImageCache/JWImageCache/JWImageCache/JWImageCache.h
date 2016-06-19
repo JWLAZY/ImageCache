@@ -9,9 +9,22 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
+
+/**
+ *  图片缓存类型
+ */
 typedef NS_ENUM(NSUInteger, JWImageCacheType) {
+    /**
+     *  不缓存
+     */
     JWImageCacheNone,
+    /**
+     *  缓存到沙盒
+     */
     JWImageCacheTypeDisk,
+    /**
+     *  缓存到内存
+     */
     JWImageCacheTypeMemory,
 };
 
@@ -19,7 +32,12 @@ typedef void (^JWImageQueryCompletedBlock)(UIImage *image, JWImageCacheType cach
 typedef void (^JWImageCheckCacheCompletionBlock)(BOOL isInCache);
 
 
+/**
+ *  内存缓存关键类
+ */
 @interface JWImageCache : NSObject
+
++ (instancetype)sharedCache;
 
 /**
  *  根据key 去查找图片

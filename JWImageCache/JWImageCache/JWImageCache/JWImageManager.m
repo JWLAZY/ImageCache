@@ -48,7 +48,6 @@
     self = [super init];
     if (self) {
         _runningOperations = [NSMutableArray new];
-        if (true) NSLog(@"test");
     }
     return self;
 }
@@ -81,6 +80,8 @@
                 };
                 dispatch_sync(dispatch_get_main_queue(), block);
             }
+            //完成之后要移除操作
+            [self.runningOperations removeObject:operation];
         }
     }];
 

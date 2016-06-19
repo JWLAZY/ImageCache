@@ -65,6 +65,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463537071CBBB14C00FA100A /* download */ = {
+			isa = PBXGroup;
+			children = (
+				4671F2881C2B9D2F00926D23 /* JWImageDownloader.h */,
+				4671F2891C2B9D2F00926D23 /* JWImageDownloader.m */,
+				4671F28B1C2BA09000926D23 /* JWImageDownloaderOperation.h */,
+				4671F28C1C2BA09000926D23 /* JWImageDownloaderOperation.m */,
+			);
+			name = download;
+			sourceTree = "<group>";
+		};
+		463537081CBBB15900FA100A /* categore */ = {
+			isa = PBXGroup;
+			children = (
+				46D6F5DF1C2AD0CF0015ACB6 /* UIImageView+JWCache.h */,
+				46D6F5E01C2AD0CF0015ACB6 /* UIImageView+JWCache.m */,
+			);
+			name = categore;
+			sourceTree = "<group>";
+		};
+		463537091CBBB1B100FA100A /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				46D6F5D91C2ACBA80015ACB6 /* JWImageCache.h */,
+				46D6F5DA1C2ACBA80015ACB6 /* JWImageCache.m */,
+			);
+			name = cache;
+			sourceTree = "<group>";
+		};
+		4635370A1CBBB1B900FA100A /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				46D6F5DC1C2AD0120015ACB6 /* JWImageManager.h */,
+				46D6F5DD1C2AD0120015ACB6 /* JWImageManager.m */,
+			);
+			name = manager;
+			sourceTree = "<group>";
+		};
 		46D6F5B51C2ACB540015ACB6 = {
 			isa = PBXGroup;
 			children = (
@@ -112,16 +150,10 @@
 		46D6F5D81C2ACB720015ACB6 /* JWImageCache */ = {
 			isa = PBXGroup;
 			children = (
-				46D6F5D91C2ACBA80015ACB6 /* JWImageCache.h */,
-				46D6F5DA1C2ACBA80015ACB6 /* JWImageCache.m */,
-				46D6F5DC1C2AD0120015ACB6 /* JWImageManager.h */,
-				46D6F5DD1C2AD0120015ACB6 /* JWImageManager.m */,
-				4671F2881C2B9D2F00926D23 /* JWImageDownloader.h */,
-				4671F2891C2B9D2F00926D23 /* JWImageDownloader.m */,
-				4671F28B1C2BA09000926D23 /* JWImageDownloaderOperation.h */,
-				4671F28C1C2BA09000926D23 /* JWImageDownloaderOperation.m */,
-				46D6F5DF1C2AD0CF0015ACB6 /* UIImageView+JWCache.h */,
-				46D6F5E01C2AD0CF0015ACB6 /* UIImageView+JWCache.m */,
+				463537091CBBB1B100FA100A /* cache */,
+				4635370A1CBBB1B900FA100A /* manager */,
+				463537071CBBB14C00FA100A /* download */,
+				463537081CBBB15900FA100A /* categore */,
 				46D6F5E21C2AF61F0015ACB6 /* JWImageOperation.h */,
 			);
 			path = JWImageCache;

@@ -29,5 +29,6 @@
 
 + (instancetype)sharedManager;
 
+- (id<JWImageOperation>)downloadImageWithURL:(NSURL *)URL progress:(JWImageDownloaderProgressBlock)progressBlock completed:(JWImageDownloaderCompletedBlock)completedBlock;
 
 @end

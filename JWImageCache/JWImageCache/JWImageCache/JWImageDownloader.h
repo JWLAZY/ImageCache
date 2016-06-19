@@ -53,6 +53,8 @@ typedef NS_OPTIONS(NSUInteger, JWImageDownloaderOptions) {
 
 @interface JWImageDownloader : NSObject
 
++ (instancetype)sharedImageDownloader;
+
 - (id<JWImageOperation>)downloadImageWithURL:(NSURL *)url options:(JWImageDownloaderOptions)option progressBlock:(JWImageDownloaderProgressBlock)progressBlock completedBlock:(JWImageDownloaderCompletedBlock)completedBlock;
 
 @end

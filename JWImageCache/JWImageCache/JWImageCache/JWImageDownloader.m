@@ -11,6 +11,16 @@
 
 @implementation JWImageDownloader
 
+
+static JWImageDownloader *imageDownloader = nil;
++ (instancetype)sharedImageDownloader
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        imageDownloader = [self new];
+    });
+    return imageDownloader;
+}
 /**
  *  下载一个图片
  *
